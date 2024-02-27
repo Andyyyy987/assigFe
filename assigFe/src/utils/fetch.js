@@ -9,8 +9,7 @@ export const signup = async (username, email, password) => {
             username: username,
             email: email,
             password: password,
-          }),
-        
+          }),        
     });
 
     const data = await response.json();

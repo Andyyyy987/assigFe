@@ -1,8 +1,15 @@
-import './App.css'
+import { useState } from 'react';
+
+import './App.css';
+import LogOrSign from './Components/logOrSign/LogOrSign';
 
 function App() {  
   return (    
-      <div>Assig</div>        
+    <>
+      <div>
+        <LogOrSign />        
+      </div>   
+    </>
   );
 }
 

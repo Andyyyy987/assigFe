@@ -1,5 +1,7 @@
 import {useState} from 'react';
 
+import { signup } from '../../utils/fetch';
+
 const Signup = () => {
 
   const [username, setUsername] = useState("");
@@ -33,8 +35,10 @@ const Signup = () => {
 
 <input
           placeholder="password" 
-          onChange={(e) => changeHandler(e, setUsername, username) }
+          onChange={(e) => changeHandler(e, setPassword, password) }
         />
+
+        <button type="submit">  Sign up</button>
 
       </form>
       
@@ -42,4 +46,4 @@ const Signup = () => {
   )
 }
 
-export default Signup
+export default Signup;
